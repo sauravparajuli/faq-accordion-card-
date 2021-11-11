@@ -8,34 +8,65 @@
 body{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
-    background-color: grey;
+    background-image: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
     
 }
 
 .main-thing{
-    width: 70%;
+    width: 75%;
     margin: auto;
-    margin-top: 100px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     background-color: white;
+    box-shadow: -1px 22px 26px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 22px 26px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 22px 26px -10px rgba(0,0,0,0.75);
 
 
 }
 
 .img{
-    margin: 6em auto;
+    margin-top: 6em;
+    margin-bottom: 6em;
     border: 2px solid blue;
+    width: 45%;
+    overflow: hidden;
+
 
 }
 
+.big-img{
+    position: relative;
+    left: -75px;
+    z-index: 99;
+   /* width: 115%; */
+}
+/*
+.small-img-container{
+    max-height: 0; 
+    overflow:; 
+}
+*/
+.small-img{
+    position: absolute;
+    top: 209px;
+    left: 6.7em;
+    z-index: 99;
+
+    /*
+    position: relative;
+    left: -97px;
+    top: -220px;
+    z-index: 99;
+    */
+}
 
 .faq{
     border: 2px solid red;
-    width: 50%;
+    width: 55%;
     margin: auto;
-    padding: 6em 6em;
+    padding: 6em 4em;
     font-size: 1.2em;
     line-height: 1.25em;
 
@@ -57,6 +88,7 @@ body{
     text-decoration: none;
     color: hsl(238, 29%, 16%);
     width: 100%;
+    padding: 0.5em 0;
 }
 
 .qna-block{
@@ -89,6 +121,7 @@ p.a{
     overflow: hidden;
     position: relative;
     transition: max-height 650ms;
+
 }
 
 .qna-block:target .answer{
@@ -108,6 +141,37 @@ p.a{
     .main-thing{
         display: flex;
         flex-direction: column;
+        width: 95%;
+        margin-bottom: 6em;
+        margin-top: 20em;
 
+
+    }
+
+    .img{
+        width: 50%;
+        max-height: 0;
+        display: block;
+        margin: auto;
+    }
+
+    .big-img{
+        position: relative;
+        top: -150px;
+        right: -100px;
+        z-index: 99;
+        width: 320px;
+    }
+
+    .faq{
+        padding: 2em 1em;
+        margin-top: 10em;
+        margin-bottom: 3em;
+        width: 90%;
+    }
+
+    .faq h1{
+        text-align: center;
+        padding: 0.8em 0;
     }
 }
