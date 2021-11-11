@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background-color: grey;
+    
+}
+
+.main-thing{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+
+}
+
+.img{
+    margin: 6em auto;
+    border: 2px solid blue;
+
+}
+
+
+.faq{
+    border: 2px solid red;
+    width: 50%;
+    margin: auto;
+    padding: 6em 6em;
+    font-size: 1.2em;
+    line-height: 1.25em;
+
+}
+
+.q-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.q-elements .fa-sort-up{
+    display: none;
+}
+
+
+.faq a{
+    text-decoration: none;
+    color: hsl(238, 29%, 16%);
+    width: 100%;
+}
+
+.qna-block{
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    padding: 1em 0;
+}
+
+p.a{
+    color: hsl(240, 6%, 50%);
+}
+
+.q-elements a{
+    color: hsl(237, 12%, 33%);
+}
+
+.q-elements a:hover{
+    color: hsl(14, 88%, 65%);
+}
+.q-elements i{
+    color: hsl(14, 88%, 65%);
+}
+
+.qna-block:target a{
+    color: hsl(238, 29%, 16%);
+    font-weight: 800;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 650ms;
+}
+
+.qna-block:target .answer{
+    max-height: 5rem;
+
+}
+
+.qna-block:target .fa-caret-down{
+    display: none;
+}
+
+.qna-block:target .fa-sort-up{
+    display: block;
+}
+
+@media (max-width: 720px) {
+    .main-thing{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
