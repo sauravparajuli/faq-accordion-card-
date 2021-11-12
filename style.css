@@ -8,17 +8,32 @@
 body{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
+    background-color: hsl(273, 75%, 66%);
     background-image: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
-    
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
 }
 
 .main-thing{
+    background-color: white;
     width: 75%;
     margin: auto;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
-    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-image: url('images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+
+
     box-shadow: -1px 22px 26px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 22px 26px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 22px 26px -10px rgba(0,0,0,0.75);
@@ -29,7 +44,6 @@ body{
 .img{
     margin-top: 6em;
     margin-bottom: 6em;
-    border: 2px solid blue;
     width: 45%;
     overflow: hidden;
 
@@ -51,7 +65,7 @@ body{
 .small-img{
     position: absolute;
     top: 209px;
-    left: 6.7em;
+    left: -7.7em;
     z-index: 99;
 
     /*
@@ -63,7 +77,6 @@ body{
 }
 
 .faq{
-    border: 2px solid red;
     width: 55%;
     margin: auto;
     padding: 6em 4em;
@@ -141,33 +154,62 @@ p.a{
     .main-thing{
         display: flex;
         flex-direction: column;
-        width: 95%;
-        margin-bottom: 6em;
-        margin-top: 20em;
+        width: 90%;
+        margin: 18em 0;
+        /* background-image: url('images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover; */
+
 
 
     }
 
     .img{
-        width: 50%;
-        max-height: 0;
-        display: block;
+       /* max-height: 0; */
         margin: auto;
+        width: 50%;
     }
 
     .big-img{
-        position: relative;
+        position: absolute;
+        left: 67px;
+        bottom: 545px;
+        width: 70%;
+
+        /*
+        position: absolute;
+        left: 120px;
+        bottom: 570px;
+        width: 50%;
+        */
+
+
+        /*
         top: -150px;
         right: -100px;
+        */
         z-index: 99;
-        width: 320px;
+    }
+
+    .small-img{
+        width: 30%;
+        left: 50px;
+        top: -60px;
+        /*
+        width: 20%;
+        left: 110px;
+        top: -35px;
+        */
+
     }
 
     .faq{
         padding: 2em 1em;
-        margin-top: 10em;
+        margin-top: 7em;
         margin-bottom: 3em;
-        width: 90%;
+        width: 87%;
     }
 
     .faq h1{
